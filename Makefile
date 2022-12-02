@@ -1,5 +1,5 @@
 NAME := go-tcp
-BUILD := go build -ldflags "-s -w" -trimpath
+BUILD := go build -ldflags "-s -w -extldflags=-static" -trimpath
 
 default: comp
 
